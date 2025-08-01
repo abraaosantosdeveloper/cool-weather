@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="shortcut icon" href="./src/img/cloudy.png" type="image/x-icon">
+    <title>EasyWeather</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./src/img/cloudy.png" alt="EasyWeather Logo" class="logo-img">
+        </div>
+        <div class="logo-label">
+            <h1>EasyWeather</h1>
+            <p>Your simple weather app</p>
+
+        </div>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <form id="weather-form" class="weather-form">
+                <h2>Weather Information</h2>
+                <div class="input-group">
+                    <input type="text" id="city-input" placeholder="" class="city-input" name="city" required>
+                    <label class="label-city" for="city">Enter city name</label>
+                    <button type="submit" class="search-btn"><img src="./src/img/search.png" alt=""></button>
+                </div>
+            </form>
+
+            <div class="divider"></div>
+
+            <div class="information-container">
+                <div class="weather-info">
+                    <h3 id="city-name" style="text-align: center;">City Name</h3>
+                    <div class="information-dual-column">
+                        <div class="info-column">
+                            <p id="temperature"><img src="./src/img/temperature-list.png" alt="thermometer" class="temperature-ico"> -- °C</p>
+                            <p id="description"><img src="./src/img/windsock.png" alt="Windsock" class="windsock-ico"> --</p>
+                        </div>
+                        <div class="info-column">
+                            <p id="humidity"><img src="./src/img/raindrops.png" alt="raindrops" class="raindrops-ico"> -- %</p>
+                            <p id="wind-speed"><img src="./src/img/wind.png" alt="wind" class="wind-ico"> -- m/s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p style="color: var(--text-light); padding: 8px 0;">Made with a lot of ☕ - All rights reserved &copy;</p>
+        </div>
+    </div>
+
+    <div class="error-message" id="error-message" style="display: none;">
+        <p>City not found. Please try again.</p>
+    </div>
+</body>
+
+</html>
